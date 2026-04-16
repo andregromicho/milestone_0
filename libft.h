@@ -6,7 +6,7 @@
 /*   By: abrandao <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/13 14:34:04 by abrandao          #+#    #+#             */
-/*   Updated: 2026/04/15 17:46:57 by abrandao         ###   ########.fr       */
+/*   Updated: 2026/04/16 16:13:54 by abrandao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,5 +43,8 @@ int	ft_atoi(const char *s);
 void	*ft_calloc(size_t nmemb, size_t size);
 char    *ft_strdup(const char *s);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
+
+void	ft_putchar_fd(char c, int fd);
+void	ft_putstr_fd(char *s, int fd);
 
 #endif

@@ -1,25 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_toupper.c                                       :+:      :+:    :+:   */
+/*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: abrandao <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/14 15:21:02 by abrandao          #+#    #+#             */
-/*   Updated: 2026/04/16 14:54:49 by abrandao         ###   ########.fr       */
+/*   Created: 2026/04/16 15:41:50 by abrandao          #+#    #+#             */
+/*   Updated: 2026/04/16 15:53:36 by abrandao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_toupper(int c)
+#include "libft.h"
+
+void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
-	if (c >= 'a' && c <= 'z')
-		return (c - 32);
-	return (c);
+	unsigned int	i;
+
+	if (!s || !f)
+		return ;
+	i = 0;
+	while (s[i] != 0)
+	{
+		f(i, &s[i]);
+		i++;
+	}
 }
 
-/*#include "libft.h"
+static void	teste_toupper(unsigned int i, char* s)
+{
+	if (*s >= 'a' && *s <= 'z')
+		*s = *s - 32;
+}
+
 int	main(void)
 {
-	printf("%c\n", toupper('c'));
-	printf("%c\n", toupper('A'));
-}*/
+	char	s[] = "hello world";
+	ft_striteri(s, teste_toupper);
+	printf("%s\n", s);
+}

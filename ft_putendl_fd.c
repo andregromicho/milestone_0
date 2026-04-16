@@ -1,25 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_toupper.c                                       :+:      :+:    :+:   */
+/*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: abrandao <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/14 15:21:02 by abrandao          #+#    #+#             */
-/*   Updated: 2026/04/16 14:54:49 by abrandao         ###   ########.fr       */
+/*   Created: 2026/04/16 16:09:54 by abrandao          #+#    #+#             */
+/*   Updated: 2026/04/16 16:16:14 by abrandao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_toupper(int c)
+#include "libft.h"
+
+void	ft_putendl_fd(char *s, int fd)
 {
-	if (c >= 'a' && c <= 'z')
-		return (c - 32);
-	return (c);
+	ft_putstr_fd(s, fd);
+	ft_putchar_fd('\n', fd);
 }
 
-/*#include "libft.h"
 int	main(void)
 {
-	printf("%c\n", toupper('c'));
-	printf("%c\n", toupper('A'));
-}*/
+	ft_putendl_fd("Hello World!", 1);
+}
+

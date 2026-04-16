@@ -6,7 +6,7 @@
 /*   By: abrandao <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/15 17:26:43 by abrandao          #+#    #+#             */
-/*   Updated: 2026/04/15 17:49:40 by abrandao         ###   ########.fr       */
+/*   Updated: 2026/04/16 12:04:15 by abrandao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,10 +30,13 @@ char *ft_strtrim(char const *s1, char const *set)
 
 int	main(void)
 {
-	char *s = "Hello World";
-	printf("%s\n", ft_strtrim(s, "Hd"));
-	free(s);
-	//mais testes
+	char *s1 = ft_strtrim("Hello World", "dH");
+	char *s2 = ft_strtrim("aaaaaaaa", "a");
+
+	printf("%s\n", s1);
+	printf("%s\n", s2);
+	free(s1);
+	free(s2);
 }
 //cc ft_strchr.c ft_strlen.c ft_substr.c ft_strdup.c ft_strlcpy.c ft_strtrim.c
 
