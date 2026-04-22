@@ -26,7 +26,7 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 	}
 }
 
-static void	teste_toupper(unsigned int i, char* s)
+/* static void	teste_toupper(unsigned int i, char* s)
 {
 	if (*s >= 'a' && *s <= 'z')
 		*s = *s - 32;
@@ -37,4 +37,4 @@ int	main(void)
 	char	s[] = "hello world";
 	ft_striteri(s, teste_toupper);
 	printf("%s\n", s);
-}
+} */

@@ -6,22 +6,20 @@
 /*   By: abrandao <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/14 12:41:06 by abrandao          #+#    #+#             */
-/*   Updated: 2026/04/15 15:13:49 by abrandao         ###   ########.fr       */
+/*   Updated: 2026/04/22 17:29:29 by abrandao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
-#include <stdio.h>
+#include "libft.h"
 
 void	*ft_memmove(void *dest, const void *src, size_t n)
 {
-
 	unsigned char	*d;
-	const unsigned char	*s;
-	size_t	i;
+	unsigned char	*s;
+	size_t			i;
 
 	d = (unsigned char *)dest;
-	s = (const unsigned char *)src;
+	s = (unsigned char *)src;
 	if (!dest && !src)
 		return (dest);
 	if (d < s)
@@ -44,7 +42,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	}
 	return (dest);
 }
-
+//memmove com mais de 25linhas
 /*int	main(void)
 {
 	char *src = "Hellow World!";

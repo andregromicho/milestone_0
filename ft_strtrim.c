@@ -28,7 +28,7 @@ char *ft_strtrim(char const *s1, char const *set)
 	return (ft_substr(s1, start, end - start));
 }
 
-int	main(void)
+/* int	main(void)
 {
 	char *s1 = ft_strtrim("Hello World", "dH");
 	char *s2 = ft_strtrim("aaaaaaaa", "a");
@@ -37,7 +37,7 @@ int	main(void)
 	printf("%s\n", s2);
 	free(s1);
 	free(s2);
-}
+} */
 //cc ft_strchr.c ft_strlen.c ft_substr.c ft_strdup.c ft_strlcpy.c ft_strtrim.c
 
 

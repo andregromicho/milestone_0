@@ -65,11 +65,11 @@ char	*ft_itoa(int n)
 }
 
 //cc ft_itoa.c ft_strdup.c ft_strlen.c 
-int	main(void)
+/*int	main(void)
 {
 	char *s = ft_itoa(-123);
 	char *s2 = ft_itoa(0);
 	printf("%s\n", s);
 	printf("%s\n", s2);
 	free (s);
-}
+}*/

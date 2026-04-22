@@ -1,31 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_lstdelone.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: abrandao <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/13 12:35:19 by abrandao          #+#    #+#             */
-/*   Updated: 2026/04/22 17:05:10 by abrandao         ###   ########.fr       */
+/*   Created: 2026/04/20 16:17:33 by abrandao          #+#    #+#             */
+/*   Updated: 2026/04/20 16:46:33 by abrandao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalnum(int c)
+#include "libft.h"
+
+void	ft_lstdelone(t_list *lst, void (*del)(void*))
 {
-	if ((c >= '0' && c <= '9')
-		|| ((c >= 'a' && c <= 'z')
-			|| (c >= 'A' && c <= 'Z')))
-	{
-		return (1);
-	}
-	return (0);
+	del(lst->content);
+	free(lst);
 }
 
-/*#include <stdio.h>
-int	main(void)
+/*int	main(void)
 {
-	printf ("%i\n", ft_isalnum('c'));
-	printf ("%i\n", ft_isalnum('C'));
-	printf ("%i\n", ft_isalnum('1'));
-	printf ("%i\n", ft_isalnum('$'));
+	t_list	*list;
+	
+	list = ft_lstnew(malloc(5));
+	ft_lstdelone(list, free);
 }*/
+//valgrind

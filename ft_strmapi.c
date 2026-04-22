@@ -35,7 +35,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 }
 
 
-char	test_toupper(unsigned int i, char c)
+/* char	test_toupper(unsigned int i, char c)
 {
 	(void)i;
 	return((char)ft_toupper(c));
@@ -49,5 +49,5 @@ int	main(void)
 	printf("%s\n", s2);
 	free(s);
 	free(s2);
-}
+} */
 //cc ft_toupper.c ft_strlen.c ft_strmapi.c

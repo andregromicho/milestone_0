@@ -1,31 +1,45 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*   ft_lstsize.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: abrandao <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/13 12:35:19 by abrandao          #+#    #+#             */
-/*   Updated: 2026/04/22 17:05:10 by abrandao         ###   ########.fr       */
+/*   Created: 2026/04/20 12:44:17 by abrandao          #+#    #+#             */
+/*   Updated: 2026/04/20 12:57:23 by abrandao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalnum(int c)
+#include "libft.h"
+
+int ft_lstsize(t_list *lst)
 {
-	if ((c >= '0' && c <= '9')
-		|| ((c >= 'a' && c <= 'z')
-			|| (c >= 'A' && c <= 'Z')))
+	int	i;
+
+	i = 0;
+	while (lst != NULL)
 	{
-		return (1);
+		lst = lst->next;
+		i++;
 	}
-	return (0);
+	return (i);
 }
 
-/*#include <stdio.h>
-int	main(void)
+/*int	main(void)
 {
-	printf ("%i\n", ft_isalnum('c'));
-	printf ("%i\n", ft_isalnum('C'));
-	printf ("%i\n", ft_isalnum('1'));
-	printf ("%i\n", ft_isalnum('$'));
+	t_list	*list;
+	t_list	*first;
+	t_list	*second;
+
+	list = NULL;
+	first = ft_lstnew("teste");
+	second = ft_lstnew("teste");
+
+	ft_lstadd_front(&list, first);
+	ft_lstadd_front(&list, second);
+
+	printf("length: %i\n", ft_lstsize(list));
+
+	free(first);
+	free(second);
 }*/
