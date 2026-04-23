@@ -147,11 +147,12 @@ cc main.c libft.a -o program
 ---
 ## 📚 Resources
 
-- man pages
-- GNU C Library documentation
-- 42 subject PDF
-- Francinette: automated testing tool for 42 projects
-- Peer discussions and testing
+- man pages.
+- GNU C Library documentation.
+- 42 subject PDF.
+- Francinette: automated testing tool for 42 projects.
+- Peer discussions and testing.
+- AI tools were used to help understand some concepts.
 
 ---
 

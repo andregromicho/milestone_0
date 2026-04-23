@@ -10,14 +10,14 @@ ft_lstlast.c ft_lstadd_back.c ft_lstdelone.c ft_lstclear.c ft_lstiter.c ft_lstma
 
 OBJS = $(SRCS:.c=.o)
 
-COMP = cc
+CC = cc
 FLAGS = -Wall -Wextra -Werror
 
 AR = ar rcs
 RM = rm -f
 
 %.o: %.c
-	$(COMP) $(FLAGS) -c $<
+	$(CC) $(FLAGS) -c $<
 
 $(NAME): $(OBJS)
 	$(AR) $(NAME) $^

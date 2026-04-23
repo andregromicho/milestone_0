@@ -6,7 +6,7 @@
 /*   By: abrandao <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/14 12:41:06 by abrandao          #+#    #+#             */
-/*   Updated: 2026/04/22 17:29:29 by abrandao         ###   ########.fr       */
+/*   Updated: 2026/04/23 12:02:15 by abrandao         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,12 +33,8 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	}
 	else if (d > s)
 	{
-		i = n;
-		while (i > 0)
-		{
-			i--;
-			d[i] = s[i];
-		}
+		while (n--)
+			d[n] = s[n];
 	}
 	return (dest);
 }

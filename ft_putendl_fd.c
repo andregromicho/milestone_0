@@ -22,4 +22,3 @@ void	ft_putendl_fd(char *s, int fd)
 {
 	ft_putendl_fd("Hello World!", 1);
 } */
-

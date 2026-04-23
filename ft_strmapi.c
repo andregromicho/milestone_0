@@ -14,8 +14,8 @@
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
-	char		*res;
-	size_t		len;
+	char			*res;
+	size_t			len;
 	unsigned int	i;
 
 	if (!s || !f)
@@ -33,7 +33,6 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	res[i] = '\0';
 	return (res);
 }
-
 
 /* char	test_toupper(unsigned int i, char c)
 {

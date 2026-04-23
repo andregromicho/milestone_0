@@ -12,13 +12,13 @@
 
 #include "libft.h"
 
-void ft_lstclear(t_list **lst, void (*del)(void*))
+void	ft_lstclear(t_list **lst, void (*del)(void*))
 {
 	t_list	*temp;
 
 	if (!lst || !*lst || !del)
 		return ;
-	while(*lst != NULL)
+	while (*lst != NULL)
 	{
 		temp = (*lst)->next;
 		ft_lstdelone((*lst), del);
