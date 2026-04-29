@@ -1,4 +1,4 @@
-*This project has been created as part of the 42 curriculum by abrandao.*
+*This project has been created as part of the 43 curriculum by abrandao.*
 
 # 📚 Libft
 
@@ -85,12 +85,12 @@ cc main.c libft.a -o program
 | ft_isascii | int ft_isascii(int c)                                                  | Checks if character is ASCII        |
 | ft_isprint | int ft_isprint(int c)                                                  | Checks if character is printable    |
 | ft_strlen  | size_t ft_strlen(const char *s)                                        | Returns string length               |
-| ft_memset  | void *ft_memset(void *b, int c, size_t len)                            | Fills memory with a constant byte   |
+| ft_memset  | void *ft_memset(void *s, int c, size_t n)                            | Fills memory with a constant byte   |
 | ft_bzero   | void ft_bzero(void *s, size_t n)                                       | Sets memory to zero                 |
-| ft_memcpy  | void *ft_memcpy(void *dst, const void *src, size_t n)                  | Copies memory area                  |
-| ft_memmove | void *ft_memmove(void *dst, const void *src, size_t len)               | Copies memory safely                |
-| ft_strlcpy | size_t ft_strlcpy(char *dst, const char *src, size_t dstsize)          | Copies string with size limit       |
-| ft_strlcat | size_t ft_strlcat(char *dst, const char *src, size_t dstsize)          | Concatenates strings safely         |
+| ft_memcpy  | void *ft_memcpy(void *dest, const void *src, size_t n)                  | Copies memory area                  |
+| ft_memmove | void *ft_memmove(void *dest, const void *src, size_t len)               | Copies memory safely                |
+| ft_strlcpy | size_t ft_strlcpy(char *dst, const char *src, size_t size)          | Copies string with size limit       |
+| ft_strlcat | size_t ft_strlcat(char *dst, const char *src, size_t size)          | Concatenates strings safely         |
 | ft_toupper | int ft_toupper(int c)                                                  | Converts to uppercase               |
 | ft_tolower | int ft_tolower(int c)                                                  | Converts to lowercase               |
 | ft_strchr  | char *ft_strchr(const char *s, int c)                                  | Finds first occurrence of character |
@@ -100,8 +100,8 @@ cc main.c libft.a -o program
 | ft_memcmp  | int ft_memcmp(const void *s1, const void *s2, size_t n)                | Compares memory                     |
 | ft_strnstr | char *ft_strnstr(const char *haystack, const char *needle, size_t len) | Finds substring                     |
 | ft_atoi    | int ft_atoi(const char *str)                                           | Converts string to integer          |
-| ft_calloc  | void *ft_calloc(size_t count, size_t size)                             | Allocates zero-initialized memory   |
-| ft_strdup  | char *ft_strdup(const char *s1)                                        | Duplicates a string                 |
+| ft_calloc  | void *ft_calloc(size_t nmemb, size_t size)                             | Allocates zero-initialized memory   |
+| ft_strdup  | char *ft_strdup(const char *s)                                        | Duplicates a string                 |
 
 ---
 
